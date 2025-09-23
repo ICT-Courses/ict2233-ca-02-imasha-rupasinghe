@@ -9,12 +9,13 @@ const Hero = ()=>{
             <h1 className='text-4xl font-bold'>
                 I'm {" "}
                 <span className='text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-600'>
-                       imasha sanjani
+                       Imasha sanjani Rupasinghe
                 </span>
+                
 
             </h1>
-            <p className='mt-4 text-lg text-gray-300'>i'm 
-
+            <p className='mt-4 text-lg text-gray-300'>
+                      I'm Undergraduate in BSC(Hons) information technology| Student University Of Sri Jayewardenepura
             </p>
             <div className='mt-8 space-x-4'>
                 <Link to="/Contact"
