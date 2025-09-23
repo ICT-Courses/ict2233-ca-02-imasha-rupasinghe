@@ -1,4 +1,8 @@
-import React from "react"
+import React from "react";
+import {NavLink} from "react-router-dom";
+
+
+
 
 const Navbar = ()=>{
 
@@ -8,9 +12,11 @@ const Navbar = ()=>{
             <div className='text-2xl font-bold hidden md:inline'>Imasha</div>
                 
                 <div className='space-x-6'>
-                    <a href="#home" className='hover:text-gray-400'>Home</a>
-                    <a href="#projects" className='hover:text-gray-400'>Projects</a>
-                    <a href="#contact" className='hover:text-gray-400'>Contact</a>
+                    <NavLink to="/" className={({isActive}) => isActive ? 'text-pink-500':'hover:text-gray-400'}> Home </NavLink>
+                    <NavLink to="/About" className={({isActive}) => isActive ? 'text-pink-500':'hover:text-gray-400'}> About </NavLink>
+                    <NavLink to="/Projects" className={({isActive}) => isActive ? 'text-pink-500':'hover:text-gray-400'}> Projects </NavLink>
+                   <NavLink to="/Contact" className={({isActive}) => isActive ? 'text-pink-500':'hover:text-gray-400'}> Contact </NavLink>
+                   
                 </div>
                 <button className='bg-gradient-to-r from-pink-500 to-purple-600 text-white hidden md:inline
                 transform transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full'>Connect me</button>
