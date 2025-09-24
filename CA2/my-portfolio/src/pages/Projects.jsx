@@ -1,8 +1,11 @@
-// src/pages/Projects.jsx
+
 import React, { useState, useEffect } from 'react';
 import ProjectsCard from '../components/ProjectsCard';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 const Projects = () => {
+    useDocumentTitle('Projects');
+
   const [publicRepos, setPublicRepos] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);

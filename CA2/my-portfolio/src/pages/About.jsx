@@ -1,8 +1,10 @@
 import React from "react";
 import AboutImage from '../assets/Aboutimage.jpg';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 
 const About = () => {
+   useDocumentTitle('About Me');
   return (
     <section className="bg-black  text-white  py-16 ">
     <div className="container mx-auto px-8 md:px-16 lg:px-24">

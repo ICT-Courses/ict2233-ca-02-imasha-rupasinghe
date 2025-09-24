@@ -6,6 +6,7 @@ import Home from './pages/Home' ;
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import About from './pages/About';
+import NotFound from './pages/Notfound';
 
 
 
@@ -19,7 +20,7 @@ return (
         <Route path="/Projects" element={<Projects />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/About" element={<About />} />
-
+         <Route path="*" element={<NotFound />} />
       </Routes>
       </div>
       <Footer/>

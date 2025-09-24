@@ -1,28 +1,30 @@
 
 import React from 'react';
 import { FaEnvelope,FaPhone, FaMapMarkedAlt } from 'react-icons/fa';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 
 const Contact = () => {
+   useDocumentTitle('Contact Me');
   return (
     <div className="container mx-auto p-8 max-w-2xl bg-black">
       <h2 className="text-3xl font-bold text-center mb-6 text-pink-500">Contact Me</h2>
-      <div className="flex flex-col md:flex-row gap-8 bg-black rounded-lg p-8">
+      <div className="flex flex-col md:flex-row gap-8 bg-black md:space-x-12">
         <div className="flex-1">
           <h3 className='text-2xl font-semibold mb-4 text-gray-200'>Let's talk</h3>
         <p className="text-gray-300 mb-6">
           Feel free to get in touch regarding collaborations, projects, or just to say hello!
         </p>
-        <div className="space-y-4 text-gray-400">
+        <div className="mb-4 mt-8 text-gray-400">
           <div className='flex-items-center'>
-          <FaEnvelope className='inline-block text-pink-400 mr-3'></FaEnvelope>
+          <FaEnvelope className='inline-block text-pink-400 mr-2'></FaEnvelope>
           <a href="mailto:rupasingaimasha@gmail.com" className='hover:underline'>rupasinghaimasha@gmail.com</a>
         </div>
         <div className="flex-items-center">
-          <FaPhone className='inline-block text-pink-400 mr-3'></FaPhone>
+          <FaPhone className='inline-block text-pink-400 mr-2'></FaPhone>
          <span>+94773240528 </span>
         </div>
         <div className="flex-items-center">
-          <FaMapMarkedAlt className='inline-block text-pink-400 mr-3'></FaMapMarkedAlt>
+          <FaMapMarkedAlt className='inline-block text-pink-400 mr-2'></FaMapMarkedAlt>
           <span>Galketiya,Kalawana,Rathnapura,SriLanka</span>
         </div>
         </div>
