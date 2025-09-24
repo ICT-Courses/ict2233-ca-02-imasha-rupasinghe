@@ -10,8 +10,7 @@ const ProjectsCard = ({ project }) => {
         href={project.html_url} 
         target="_blank" 
         rel="noopener noreferrer" 
-        className="text-purple-400 hover:text-purple-500 font-semibold transition-colors duration-200"
-      >
+        className="inline-block bg-gradient-to-r from-pink-600 to-blue-600 text-white px-4 py-2 rounded-full">
         View on GitHub &rarr;
       </a>
     </div>

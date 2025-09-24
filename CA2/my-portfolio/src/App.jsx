@@ -1,10 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 import './App.css'
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './pages/Home' ;
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import About from './pages/About';
+
 
 
 function App() {
@@ -20,6 +22,7 @@ return (
 
       </Routes>
       </div>
+      <Footer/>
     </>
       );
     }

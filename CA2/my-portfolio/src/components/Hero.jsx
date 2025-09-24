@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from "react-router-dom";
-import HeroImage from '../assets/imasha.jpg'
+import HeroImage from '../assets/imasha2.jpg'
 
 const Hero = ()=>{
     return (
@@ -9,13 +9,14 @@ const Hero = ()=>{
             <h1 className='text-4xl font-bold'>
                 I'm {" "}
                 <span className='text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-600'>
-                       Imasha sanjani Rupasinghe
+                       Imasha Rupasinghe
                 </span>
                 
 
             </h1>
             <p className='mt-4 text-lg text-gray-300'>
-                      I'm Undergraduate in BSC(Hons) information technology| Student University Of Sri Jayewardenepura
+                       Undergraduate in BSC(Hons) information technology | Student
+                        University Of Sri Jayewardenepura
             </p>
             <div className='mt-8 space-x-4'>
                 <Link to="/Contact"

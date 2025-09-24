@@ -14,7 +14,7 @@ const Projects = () => {
       name: 'MotivateME-motivation App',
       description: 'stand alone application developed using c# and wpf as a university assignment.',
       html_url: 'https://github.com/ICT-Courses/application-development-ca1-imasha-rupasinghe.git',
-      image:'\src\assets\projectOne.png', 
+
     },
     {
       id: 'manual-2',
