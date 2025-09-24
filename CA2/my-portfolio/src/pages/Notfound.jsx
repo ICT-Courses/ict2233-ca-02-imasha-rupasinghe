@@ -13,7 +13,7 @@ const NotFound = () => {
             Page Not Found
           </h2>
           <p className='text-lg text-gray-400 mb-8 max-w-lg leading-relaxed'>
-            
+            this page is unable to load..
           </p>
           <Link to="/" className="bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold py-3 px-8 rounded-full">
             Back to Home
