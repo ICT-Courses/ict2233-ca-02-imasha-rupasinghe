@@ -5,24 +5,17 @@ const NotFound = () => {
   useDocumentTitle('Page Not Found');
 
   return (
-    <section className="page-section">
-      <div className="container">
-        <div className="not-found-container">
-          <h1 className="not-found-title">404</h1>
-          <h2 className="not-found-message">
-            Oops! This recipe seems to have gone missing from our kitchen! 🍳
+    <section className="text-white min-h-screen flex items-center justify-center">
+      <div className="container mx-auto p-8 text center">
+        <div className="flex flex-col items-center justify-center">
+          <h1 className="text-8xl font-bod text-pink-500 mb-4">404</h1>
+          <h2 className="text-3xl md:text-4xl font-semibold text-gray-200 mb-4">
+            Page Not Found
           </h2>
-          <p style={{ 
-            fontSize: '1.1rem', 
-            color: '#7f8c8d', 
-            marginBottom: '2rem',
-            maxWidth: '500px',
-            lineHeight: '1.6'
-          }}>
-            The page you're looking for doesn't exist. Maybe it got eaten by mistake? 
-            Let's get you back to our delicious collection of recipes.
+          <p className='text-lg text-gray-400 mb-8 max-w-lg leading-relaxed'>
+            
           </p>
-          <Link to="/" className="back-home-button">
+          <Link to="/" className="bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold py-3 px-8 rounded-full">
             Back to Home
           </Link>
         </div>
