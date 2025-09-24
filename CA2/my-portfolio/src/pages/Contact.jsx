@@ -6,7 +6,8 @@ import { useDocumentTitle } from '../hooks/useDocumentTitle';
 const Contact = () => {
    useDocumentTitle('Contact Me');
   return (
-    <div className="container mx-auto p-8 max-w-2xl bg-black">
+    <div className="bg-black text-white py-20">
+    <div className="container mx-auto p-8 md:px-16 lg:px-24">
       <h2 className="text-3xl font-bold text-center mb-6 text-pink-500">Contact Me</h2>
       <div className="flex flex-col md:flex-row gap-8 bg-black md:space-x-12">
         <div className="flex-1">
@@ -79,7 +80,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    
+    </div>
   );
 };
 

@@ -4,6 +4,10 @@ import React from 'react';
 const ProjectsCard = ({ project }) => {
   return (
     <div className="bg-gray-800 rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+      {project.image &&(
+        <img src={project.image} alt={project.name}
+        className='w full h-48 object-cover rounded-md mb-4'/>
+      )}
       <h3 className="text-xl font-bold mb-2 text-white">{project.name}</h3>
       <p className="text-gray-400 mb-4">{project.description || 'No description provided.'}</p>
       <a 

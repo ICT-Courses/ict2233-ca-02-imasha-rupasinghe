@@ -2,6 +2,10 @@
 import React, { useState, useEffect } from 'react';
 import ProjectsCard from '../components/ProjectsCard';
 import { useDocumentTitle } from '../hooks/useDocumentTitle';
+import projectone from '../assets/projectOne.png';
+import projectTwo from '../assets/projectTwo.png';
+import projectThree from '../assets/projectThree.png';
+import projectFour from '../assets/projectFour.png';
 
 const Projects = () => {
     useDocumentTitle('Projects');
@@ -17,6 +21,7 @@ const Projects = () => {
       name: 'MotivateME-motivation App',
       description: 'stand alone application developed using c# and wpf as a university assignment.',
       html_url: 'https://github.com/ICT-Courses/application-development-ca1-imasha-rupasinghe.git',
+      image: projectone,
 
     },
     {
@@ -24,12 +29,14 @@ const Projects = () => {
       name: 'SilkSheild-Invoice generator',
       description: 'A full-stack desktop application built for SilkShield(pvt)Ltd.',
       html_url: 'https://github.com/UdeshiEdirisinghe25/SilkShield-New.git',
+      image: projectThree,
     },
     {
       id: 'manual-3',
       name: 'Personal Portfolio website',
       description: 'a website that developed with javascript,vite and tailwind css',
       html_url: 'https://github.com/ICT-Courses/ict2233-ca-02-imasha-rupasinghe.git',
+      image: projectFour,
     },
   ];
 
